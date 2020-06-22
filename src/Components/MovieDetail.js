@@ -6,7 +6,7 @@ const MovieDetail = ({selectedMovie}) =>{
            return <h1> Please Select a Movie </h1>
        }
        return(
-            <div classNameName="card" style={{"width": "18rem","border":"1px solid rgba(0,0,0,0.125)"}}>
+            <div className="card" style={{"width": "18rem","border":"1px solid rgba(0,0,0,0.125)"}}>
                 <img src={selectedMovie.imageUrl} style={{"height":"300px"}} className="card-img-top" alt={selectedMovie.title} />
                 <div className="card-body">
                     <h5 className="card-title">{selectedMovie.title}</h5>

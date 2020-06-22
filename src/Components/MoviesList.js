@@ -1,10 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import { selectMovie } from '../actions'
+import { selectMovie,fetchMovies } from '../actions'
 
 class MoviesList extends React.Component{
     constructor(props){
         super(props);
+    }
+    componentDidMount(){
+        this.props.fetchMovies();
     }
     renderMoviesList(){
         return this.props.movies.map((movie,index)=>{
@@ -26,4 +29,4 @@ function mapStateToProps(state){
     }
 }
 
-export default connect(mapStateToProps,{handleMovieSelect:selectMovie})(MoviesList);
+export default connect(mapStateToProps,{handleMovieSelect:selectMovie,fetchMovies})(MoviesList);

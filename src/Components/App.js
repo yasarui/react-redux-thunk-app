@@ -1,11 +1,13 @@
 import React,{ Component } from 'react';
-import {createStore} from 'redux';
+import {createStore,applyMiddleware,compose} from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import {Provider} from 'react-redux';
+import thunk from 'redux-thunk';
 import reducers from '../reducers';
 import MovieDetail from './MovieDetail';
 import MoviesList from './MoviesList';
 
-const store = createStore(reducers,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)));
  
 const App = () =>{
   return(
