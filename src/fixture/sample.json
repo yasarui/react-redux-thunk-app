@@ -1,0 +1,44 @@
+{
+    "movies":[
+       {
+          "title":"Kaala",
+          "year":2018,
+          "director":"Ranjith",
+          "musicDirector":"Ghibran",
+          "cast":"Rajnikanth",
+          "imageUrl":"images/kaala.jpg"
+       },
+       {
+          "title":"96",
+          "year":2018,
+          "director":"Prem Kumar",
+          "musicDirector":"Govind Menon",
+          "cast":"Vijay Sethupathi",
+          "imageUrl":"images/96.jpg"
+       },
+       {
+          "title":"Pariyerum Perumal",
+          "year":2018,
+          "director":"Mari Selvaraj",
+          "musicDirector":"Santhosh Narayanan",
+          "cast":"Kathir",
+          "imageUrl":"images/pariyerum.jpg"
+       },
+       {
+          "title":"vadachennai",
+          "year":2018,
+          "director":"Vetrimaaran",
+          "musicDirector":"Santhosh Narayanan",
+          "cast":"Dhanush",
+          "imageUrl":"images/vadachennai.jpg"
+       },
+       {
+          "title":"Ratsasan",
+          "year":2018,
+          "director":"Ram Kumar",
+          "musicDirector":"Ghibran",
+          "cast":"Vishnu Vishal",
+          "imageUrl":"images/ratsasan.jpg"
+       }
+    ]
+ }
